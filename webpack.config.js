@@ -89,7 +89,7 @@ module.exports = {
                         // Exclude `js` files to keep "css" loader working as it injects
                         // it's runtime that would otherwise processed through "file" loader.
                         // Also exclude `html` and `json` extensions so they get processed
-                        // by webpacks internal loaders.
+                        // by webpack internal loaders.
                         exclude: [/\.js$/, /\.html$/, /\.json$/],
                         test: /\.(png|jpg|gif)$/,
                         use: ['file-loader']
@@ -101,7 +101,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: path.join(paths.SRC, 'index.html'),
-            // uncomment next object for production
+            // un comment next object for production
             // minify: {
             //     removeComments: true,
             //     collapseWhitespace: true,
